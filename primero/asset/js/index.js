@@ -75,18 +75,18 @@ btn_genero.addEventListener("click", function(){
 
 // PUNTO QUINTO 
 
-btn_multiplicacion.addEventListener("click", function(){
+btn_multiplicacion.addEventListener("click", function(event){
+    event.preventDefault();
     const numero_a_multiplicar = document.getElementById("numero_tabla").value;
     const numero_fin = document.getElementById("numero_hasta").value;
     const resultado_5 = document.getElementById("QUINTO_EJERCICIO")
-    let totalmult = 0;
-
     for ( i = 0; i <= numero_fin; i++) {
-        resultado_5.innerHTML = "numero_a_multiplicar" + totalmult * i       
+    //const numero_a_multiplicar = document.getElementById("numero_tabla").value;
+
+        paso_uno = numero_a_multiplicar *i
+        // console.log(numero_a_multiplicar + " * " + i + " = " + " " +paso_uno);
+        resultado_5.innerHTML += numero_a_multiplicar + " * " + i + " = " + " " + paso_uno + "<br>"
     }
-
-
-
 });
 
 
@@ -111,7 +111,6 @@ btn_descuento.addEventListener("click", function(){
     }
 
 });
-
 
 
 
