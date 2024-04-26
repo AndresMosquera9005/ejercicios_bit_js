@@ -94,23 +94,34 @@ btn_multiplicacion.addEventListener("click", function(event){
 
 // PUNTO SEXTO 
 
-btn_descuento.addEventListener("click", function(){
+btn_descuento.addEventListener("click", function(event){
+    event.preventDefault();
+
     const valor_nota = document.getElementById("nota").value;
     let valor_matricula = 1000000;
-    let resultado_6 = document.getElementById("SEXTO_EJERCICIO")
-    let descuento_5 = 5
-    
+    let resultado_6 = document.getElementById("SEXTO_EJERCICIO") 
     
 
     if(valor_nota < 3){
         resultado_6.innerHTML = `Total a pagar es ${valor_matricula}`
     }
 
-    if(valor_nota > 3){
-
+    if(valor_nota >= 3 && valor_nota <= 4){
+        let valor_matricula = 1000000;
+        descuento_2 = 5
+        procedimiento = valor_matricula-((valor_matricula * descuento_2)/100)
+        resultado_6.innerHTML = `Total a pagar es: ${procedimiento}`
     }
 
-});
+
+    if (valor_nota >= 4){
+        let valor_matricula = 1000000;
+        descuento_10 = 50
+        procedimiento_10 = valor_matricula -((valor_matricula * descuento_10 )/100)
+        resultado_6.innerHTML = `Total a pagar es: ${procedimiento_10}`
+    }
+
+})
 
 
 
