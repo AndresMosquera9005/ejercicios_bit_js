@@ -1,4 +1,22 @@
-/* * {
-    margin: 0px;
-    padding: 0px;
-} */
+*{
+    /* margin: 0px;
+    padding: 0px; */
+    /* align-content: center; */
+}
+
+.margen {
+    border: 1px solid #000;
+    margin-right: 500px;
+    margin-left: 100px;
+}
+
+p {
+    text-align: center;
+}
+
+.estilo_tecer_punto {
+    margin: 10px;
+}
+
+
+
