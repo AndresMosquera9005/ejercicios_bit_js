@@ -6,17 +6,23 @@
 
 .margen {
     border: 1px solid #000;
+    margin-bottom: 20px;
     margin-right: 500px;
     margin-left: 100px;
+}
+
+.margin_input{
+    margin: 10px;
 }
 
 p {
     text-align: center;
 }
 
-.estilo_tecer_punto {
+.boxFrom {
     margin: 10px;
 }
 
-
-
+.form-margen {
+    margin: 10px;
+}

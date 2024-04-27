@@ -3,8 +3,8 @@ const btn_par_impar = document.getElementById("btn_#_par_impar");
 const btn_edad_menor = document.getElementById("btn_menor");
 const btn_edad_mayor = document.getElementById("btn_mayor");
 const btn_genero = document.getElementById("btn_genero");
-const btn_multiplicacion = document.getElementById("btn_multiplica")
-
+const btn_multiplicacion = document.getElementById("btn_multiplica");
+const btn_descuento_matri = document.getElementById("btn_descuento");
 
 
 //PUNTO UNO
@@ -94,7 +94,7 @@ btn_multiplicacion.addEventListener("click", function(event){
 
 // PUNTO SEXTO 
 
-btn_descuento.addEventListener("click", function(event){
+btn_descuento_matri.addEventListener("click", function(event){
     event.preventDefault();
 
     const valor_nota = document.getElementById("nota").value;
