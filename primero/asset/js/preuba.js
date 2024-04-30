@@ -1,19 +1,71 @@
 const btn_haga_su_memu = document.getElementById("Valor_a_pagar");
+const resultado_4 = document.getElementById("CUARTO_EJERCICIO");
 
 
 let arr_menu =[ 
-    {nombre: "hamburgesa", precio: 10000 },
-    {nombre: "perro", precio: 10000 },
-    {nombre: "pizza", precio: 10000 },
-    {nombre: "arroz con huevo", precio: 8500 },
-    {nombre: "gaseosa colombiana", precio: 2500 },
-    {nombre: "agua brisa", precio: 2500 },
-    {nombre: "jugo hit", precio: 2500 },
-    {nombre: "jugo del valle", precio: 2500 },
-    {nombre: "limonada", precio: 2500 },
+    {
+        nombre: "Hamburgesa",
+        precio: 10000 ,
+        img:"asset/img/hamburguesa.jpeg",
+        cantidad: 1
+    },
+    {
+        nombre: "Perro caliente", 
+        precio: 10000,
+        img: "asset/img/perro_caliente.jpeg",
+        cantidad: 1
+    },
+    {
+        nombre: "Pizza",
+        precio: 10000 ,
+        img:"asset/img/pizza.jpeg",
+        cantidad: 1
+    },
+    {
+        nombre: "Empanada de carne", 
+        precio: 3000,
+        img: "asset/img/empanada.jpeg",
+        cantidad: 1
+    },
+    {
+        nombre: "Empanada de pollo", 
+        precio: 3000,
+        img: "asset/img/empanada.jpeg",
+        cantidad: 1
+
+    },
+    {
+        nombre: "Gaseosa colombiana", 
+        precio: 2500 ,
+        img: "asset/img/gaseosa_colombiana.jpeg",
+        cantidad: 1
+    },    
+    {
+        nombre: "Agua brisa", 
+        precio: 2500 ,
+        img: "asset/img/",
+        cantidad: 1
+    },
+    {
+        nombre: "Jugo hit", 
+        precio: 2500 ,
+        img:"asset/img/agua_cristal.jpeg",
+        cantidad: 1
+    },
+    {
+        nombre: "Gaseosa coca cola", 
+        precio: 2500 ,
+        img: "asset/img/cocacola.jpeg",
+        cantidad: 1
+    },    
+    {
+        nombre: "Limonada", 
+        precio: 2500 ,
+        img: "asset/img/limonada.jpeg",
+        cantidad: 1
+    },
 ]
+console.log(arr_menu[0]);
+let div_lista_menu = document.getElementById("menu")
 
-btn_haga_su_memu.addEventListener("click", function(){
-    const agregando = document.getElementById("menu").value;
 
-})
