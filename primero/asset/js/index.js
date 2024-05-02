@@ -73,6 +73,9 @@ btn_genero.addEventListener("click", function(){
 // PUNTO CUATRO
 
 
+
+
+
 // PUNTO QUINTO 
 
 btn_multiplicacion.addEventListener("click", function(event){
