@@ -1,6 +1,7 @@
 const btn_haga_su_memu = document.getElementById("Valor_a_pagar");
 const resultado_4 = document.getElementById("CUARTO_EJERCICIO");
 const btn_buscando_menu = document.getElementById("Valor_a_pagar");
+const btn_lista_menu = document.getElementById("lista_menu")
 
 
 let arr_menu =[ 
@@ -23,13 +24,13 @@ let arr_menu =[
         cantidad: 1
     },
     {
-        nombre: "EMPANADA DE CARNE", 
-        precio: 3000,
-        img: "asset/img/empanada.jpeg",
+        nombre: "CHULETA VALLUNA",
+        precio: 20000 ,
+        img:"",
         cantidad: 1
     },
     {
-        nombre: "EMPANADA DE POLLO", 
+        nombre: "EMPANADA", 
         precio: 3000,
         img: "asset/img/empanada.jpeg",
         cantidad: 1
@@ -71,17 +72,21 @@ let arr_menu =[
         cantidad: 1
     },
 ]
+
 console.log(arr_menu[3].nombre);
+
+total_comida = 0;
 let div_lista_menu = document.getElementById("menu")
 
 btn_buscando_menu.addEventListener("click", function () {
-    const menu_del_cliente = document.getElementById("menu").value
+    const menu_del_cliente = document.getElementById("menu").value.toUpperCase()
     const resultado_4 = document.getElementById("CUARTO_EJERCICIO")
     const eleccion_cliente = arr_menu.find(x => x.nombre == menu_del_cliente)
 
-    console.log(eleccion_cliente);
-
-
+    total_comida = total_comida + eleccion_cliente.precio
+    console.log("total a pagar: " + " "   + total_comida);
+    console.log(eleccion_cliente.nombre , eleccion_cliente.precio);
+    
 })
 
 
