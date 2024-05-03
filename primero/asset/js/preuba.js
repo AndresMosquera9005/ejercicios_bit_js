@@ -85,8 +85,6 @@ btn_buscando_menu.addEventListener("click", function () {
 
     total_comida = total_comida + eleccion_cliente.precio
     console.log("total a pagar: " + " "   + total_comida);
-    console.log(eleccion_cliente.nombre , eleccion_cliente.precio);
-    
+    console.log(eleccion_cliente.nombre , eleccion_cliente.precio, eleccion_cliente.img);
+    resultado_4.innerHTML = "total a pagar: " + " " + total_comida
 })
-
-
