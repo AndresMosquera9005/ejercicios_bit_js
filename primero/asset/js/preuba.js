@@ -73,18 +73,23 @@ let arr_menu =[
     },
 ]
 
-console.log(arr_menu[3].nombre);
 
 total_comida = 0;
 let div_lista_menu = document.getElementById("menu")
 
 btn_buscando_menu.addEventListener("click", function () {
+    
     const menu_del_cliente = document.getElementById("menu").value.toUpperCase()
     const resultado_4 = document.getElementById("CUARTO_EJERCICIO")
+    const lista_pedido = document.getElementById("lista_pedido")
     const eleccion_cliente = arr_menu.find(x => x.nombre == menu_del_cliente)
-
-    total_comida = total_comida + eleccion_cliente.precio
-    console.log("total a pagar: " + " "   + total_comida);
-    console.log(eleccion_cliente.nombre , eleccion_cliente.precio, eleccion_cliente.img);
-    resultado_4.innerHTML = "total a pagar: " + " " + total_comida
+    const nuevoCampoLista = document.createElement("li");
+    if(eleccion_cliente == null){
+        alert("Lo sentimos en este momento no tenemos")
+    }else{
+        total_comida += eleccion_cliente.precio;
+        nuevoCampoLista.textContent = menu_del_cliente + " " + "$" + eleccion_cliente.precio;
+        lista_pedido.appendChild(nuevoCampoLista)
+    }
+    resultado_4.innerHTML = "Total a pagar: " + " " + "$" + total_comida
 })
